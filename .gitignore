@@ -1,0 +1,30 @@
+# Ignore Node.js build artifacts and dependencies
+node_modules/
+/dist/
+/build/
+
+# Ignore public folder in client
+/client/public/
+
+# Ignore environment variables file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore user-specific files
+npm-debug.log
+yarn-error.log
+
+# Ignore user uploads (if applicable)
+/uploads/
+
+# Ignore package manager lock files
+package-lock.json
+yarn.lock
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore nodemon default pid and log files
+nodemon-debug.log
