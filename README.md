@@ -45,5 +45,7 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 
 ## Day 5 (5/2/2024): Update Profile UI
 * Created a Profile page file and imported AntD tabs (client/src/pages/Profile.js).
+* Created separate pages (.js) for Personal Info, Skills and Experience tabs.
+* Imported dynamic forms from AntD library for Skills and Experience pages.
   
  
