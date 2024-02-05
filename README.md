@@ -3,7 +3,7 @@ Resume builder using MERN stack
 
 
 ## Day 1 (27/01/2024) : Frontend Setup
-1. Setup the react app for frontend.
+###1. Setup the react app for frontend.
 * Installed Axios and Ant Design React UI Library.
 * Imported associated libraries.
 
