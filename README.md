@@ -3,27 +3,34 @@ Resume builder using MERN stack
 
 
 ## Day 1 (27/01/2024) : Frontend Setup
-###1. Setup the react app for frontend.
-* Installed Axios and Ant Design React UI Library.
-* Imported associated libraries.
+1. Setup the react app for frontend.
+  * Installed Axios and Ant Design React UI Library.
+  * Imported associated libraries.
 
 2. Created routing and a folder structure. Created following folders in src/client:
-* components
-* pages
-* resources
-  And created routes to Home, Register and Login pages inside src/client/App.js
+  * components
+  * pages
+  * resources
+And created routes to Home, Register and Login pages inside src/client/App.js
 
 
 ## Day 2 (28/01/2024) : Layout Setup
-* Created a default layout for landing/home page.
-* Applied styles to home page using authentication.css and defaultLayout.css from resources folder.
-* Imported custom font and Bootstrap css.
+  * Created a default layout for landing/home page.
+  * Applied styles to home page using authentication.css and defaultLayout.css from resources folder.
+  * Imported custom font and Bootstrap css.
 
 
 ## Backend Setup
 1. Node 
-* Installed Express.js, Mongoose and Nodemon.
-* Created backend entrypoint (server.js).
+  * Installed Express.js, Mongoose and Nodemon.
+  * Created backend entrypoint (server.js).
 
 2. Mongo Connection
+  * Created a database using MongoDB.
+  * Established connection with cluster using MongoDB Compass.
+  * Integrated database connection with backend (dbConnect.js).
+  * Created a user schema (RESUMEZY/models/userModel.js).
+
+3. Authentication APIs
+  * Defined routes '/login' and '/register' to handle POST requests (RESUMEZY/routes/userRoute.js).
  
