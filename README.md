@@ -21,7 +21,7 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 
 
 ## Backend Setup
-1. Node 
+### 1. Node 
   * Installed Express.js, Mongoose and Nodemon.
   * Created backend entrypoint (server.js).
 
@@ -33,4 +33,6 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 
 3. Authentication APIs
   * Defined routes '/login' and '/register' to handle POST requests (RESUMEZY/routes/userRoute.js).
+
+##
  
