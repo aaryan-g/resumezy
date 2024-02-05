@@ -43,6 +43,7 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 * Created protected routes to home, login and register pages (RESUMEZY/client/src/App.js).
 * Customised navigation bar on header page.
 
-## Day 5 (5/2/2024): 
+## Day 5 (5/2/2024): Update Profile UI
+* Created a Profile page file and imported AntD tabs (client/src/pages/Profile.js).
   
  
