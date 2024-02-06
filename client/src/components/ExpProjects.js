@@ -1,13 +1,14 @@
 import React from "react";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
+import TextArea from "antd/es/input/TextArea";
 
-function SkillsEdu() {
+function ExpProjects() {
   return (
     <div>
-      <h5>Education</h5>
+      <h5>Experience</h5>
       <hr />
-      <Form.List name="education">
+      <Form.List name="experience">
         {(fields, { add, remove }) => (
           <>
             {fields.map(({ key, name, ...restField }, index) => (
@@ -15,35 +16,35 @@ function SkillsEdu() {
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
-                    name={[name, "qualification"]}
-                    label={index === 0 ? "Qualification" : null}
+                    name={[name, "company"]}
+                    label={index === 0 ? "Company" : null}
                     rules={[
                       { required: true, message: "Missing qualification" },
                     ]}
                   >
-                    <Input placeholder="eg. Bachelors / Masters" />
+                    <Input placeholder="Company name" />
                   </Form.Item>
                 </div>
 
                 <div className="col-md-2">
                   <Form.Item
                     {...restField}
-                    name={[name, "percentage"]}
-                    label={index === 0 ? "Percentage / Score" : null}
+                    name={[name, "duration"]}
+                    label={index === 0 ? "Duration" : null}
                     rules={[{ required: true, message: "Missing percentage" }]}
                   >
-                    <Input placeholder="eg. 95% or 9.1/10.0" />
+                    <Input placeholder="(In years)" />
                   </Form.Item>
                 </div>
 
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
-                    name={[name, "institution"]}
-                    label={index === 0 ? "Institution" : null}
+                    name={[name, "location"]}
+                    label={index === 0 ? "Location" : null}
                     rules={[{ required: true, message: "Missing institution" }]}
                   >
-                    <Input placeholder="Institution" />
+                    <Input placeholder="eg. Pune" />
                   </Form.Item>
                 </div>
 
@@ -73,16 +74,16 @@ function SkillsEdu() {
                 block
                 icon={<PlusOutlined />}
               >
-                Add Education
+                Add Experience
               </Button>
             </Form.Item>
           </>
         )}
       </Form.List>
 
-      <h5>Skills</h5>
+      <h5>Projects</h5>
       <hr />
-      <Form.List name="skills">
+      <Form.List name="projects">
         {(fields, { add, remove }) => (
           <>
             {fields.map(({ key, name, ...restField }, index) => (
@@ -90,26 +91,37 @@ function SkillsEdu() {
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
-                    name={[name, "technology"]}
-                    label={index === 0 ? "Technology" : null}
+                    name={[name, "title"]}
+                    label={index === 0 ? "Project Title" : null}
                     rules={[{ required: true, message: "Missing technology" }]}
                   >
-                    <Input placeholder="eg. Java" />
+                    <Input placeholder="eg. Project Title" />
+                  </Form.Item>
+                </div>
+
+                <div className="col-md-5">
+                  <Form.Item
+                    {...restField}
+                    name={[name, "description"]}
+                    label={index === 0 ? "Description" : null}
+                    rules={[{ required: true, message: "Missing rating" }]}
+                  >
+                    <TextArea placeholder="Brief description of your project." />
                   </Form.Item>
                 </div>
 
                 <div className="col-md-2">
                   <Form.Item
                     {...restField}
-                    name={[name, "rating"]}
-                    label={index === 0 ? "Rating (out of 10)" : null}
-                    rules={[{ required: true, message: "Missing rating" }]}
+                    name={[name, "range"]}
+                    label={index === 0 ? "Year Range" : null}
+                    rules={[{ required: true, message: "Missing year range" }]}
                   >
-                    <Input placeholder="eg. 8" />
+                    <Input placeholder="From - To" />
                   </Form.Item>
                 </div>
 
-                <div className="col-md-7">
+                <div className="col-md-2">
                   <MinusCircleOutlined
                     style={{ fontSize: 25, color: "tomato", marginTop: "32px" }}
                     onClick={() => remove(name)}
@@ -124,7 +136,7 @@ function SkillsEdu() {
                 block
                 icon={<PlusOutlined />}
               >
-                Add Skill
+                Add Project
               </Button>
             </Form.Item>
           </>
@@ -134,4 +146,4 @@ function SkillsEdu() {
   );
 }
 
-export default SkillsEdu;
+export default ExpProjects;

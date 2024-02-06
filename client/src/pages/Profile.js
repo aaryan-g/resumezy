@@ -3,6 +3,7 @@ import DefaultLayout from "../components/DefaultLayout";
 import { Form, Tabs } from "antd";
 import PersonalInfo from "../components/PersonalInfo";
 import SkillsEdu from "../components/SkillsEdu";
+import ExpProjects from "../components/ExpProjects";
 
 const items = [
   {
@@ -18,7 +19,7 @@ const items = [
   {
     key: "3",
     label: "Experience / Projects",
-    children: "Content of Tab Pane 3",
+    children: <ExpProjects />,
   },
 ];
 
@@ -27,8 +28,14 @@ function Profile() {
     <DefaultLayout>
       <div className="update-profile">
         <h2>Update Profile</h2>
-        <Form layout="vertical" onFinish={() => {}}>
+        <Form
+          layout="vertical"
+          onFinish={(values) => {
+            console.log(values);
+          }}
+        >
           <Tabs defaultActiveKey="1" items={items} />
+          <button htmlType="Submit">UPDATE</button>
         </Form>
       </div>
     </DefaultLayout>
