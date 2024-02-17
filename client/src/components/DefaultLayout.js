@@ -36,7 +36,9 @@ function DefaultLayout(props) {
   return (
     <div className="layout">
       <div className="header">
-        <h1>RESUMEZY</h1>
+        <h1 onClick={() => navigate("/Home")} style={{ cursor: "pointer" }}>
+          RESUMEZY
+        </h1>
         <Dropdown
           menu={{
             items,
@@ -46,7 +48,9 @@ function DefaultLayout(props) {
           <Button>{user.username}</Button>
         </Dropdown>
       </div>
-      <div className="content">{props.children}</div>
+      <div className="content" style={{ overflow: "scroll" }}>
+        {props.children}
+      </div>
     </div>
   );
 }

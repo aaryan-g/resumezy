@@ -11,13 +11,13 @@ function ExpProjects() {
       <Form.List name="experience">
         {(fields, { add, remove }) => (
           <>
-            {fields.map(({ key, name, ...restField }, index) => (
+            {fields.map(({ key, name, ...restField }) => (
               <div key={key} className="row">
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
                     name={[name, "company"]}
-                    label={index === 0 ? "Company" : null}
+                    label="Company"
                     rules={[
                       { required: true, message: "Missing qualification" },
                     ]}
@@ -30,7 +30,7 @@ function ExpProjects() {
                   <Form.Item
                     {...restField}
                     name={[name, "duration"]}
-                    label={index === 0 ? "Duration" : null}
+                    label="Duration"
                     rules={[{ required: true, message: "Missing percentage" }]}
                   >
                     <Input placeholder="(In years)" />
@@ -41,7 +41,7 @@ function ExpProjects() {
                   <Form.Item
                     {...restField}
                     name={[name, "location"]}
-                    label={index === 0 ? "Location" : null}
+                    label="Location"
                     rules={[{ required: true, message: "Missing institution" }]}
                   >
                     <Input placeholder="eg. Pune" />
@@ -52,7 +52,7 @@ function ExpProjects() {
                   <Form.Item
                     {...restField}
                     name={[name, "range"]}
-                    label={index === 0 ? "Year Range" : null}
+                    label="Year Range"
                     rules={[{ required: true, message: "Missing year range" }]}
                   >
                     <Input placeholder="From - To" />
@@ -60,10 +60,21 @@ function ExpProjects() {
                 </div>
 
                 <div className="col-md-2">
-                  <MinusCircleOutlined
-                    style={{ fontSize: 25, color: "tomato", marginTop: "32px" }}
-                    onClick={() => remove(name)}
-                  />
+                  <Form.Item
+                    style={{ display: "flex", alignItems: "center" }} // Align vertically with input fields
+                    {...restField}
+                    shouldUpdate={(prevValues, curValues) =>
+                      prevValues.area !== curValues.area ||
+                      prevValues.sights !== curValues.sights
+                    }
+                  >
+                    {() => (
+                      <MinusCircleOutlined
+                        style={{ fontSize: 25, color: "tomato" }}
+                        onClick={() => remove(name)}
+                      />
+                    )}
+                  </Form.Item>
                 </div>
               </div>
             ))}
@@ -86,13 +97,13 @@ function ExpProjects() {
       <Form.List name="projects">
         {(fields, { add, remove }) => (
           <>
-            {fields.map(({ key, name, ...restField }, index) => (
+            {fields.map(({ key, name, ...restField }) => (
               <div key={key} className="row">
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
                     name={[name, "title"]}
-                    label={index === 0 ? "Project Title" : null}
+                    label="Project Title"
                     rules={[{ required: true, message: "Missing technology" }]}
                   >
                     <Input placeholder="eg. Project Title" />
@@ -103,7 +114,7 @@ function ExpProjects() {
                   <Form.Item
                     {...restField}
                     name={[name, "description"]}
-                    label={index === 0 ? "Description" : null}
+                    label="Description"
                     rules={[{ required: true, message: "Missing rating" }]}
                   >
                     <TextArea placeholder="Brief description of your project." />
@@ -114,7 +125,7 @@ function ExpProjects() {
                   <Form.Item
                     {...restField}
                     name={[name, "range"]}
-                    label={index === 0 ? "Year Range" : null}
+                    label="Year Range"
                     rules={[{ required: true, message: "Missing year range" }]}
                   >
                     <Input placeholder="From - To" />
@@ -122,10 +133,21 @@ function ExpProjects() {
                 </div>
 
                 <div className="col-md-2">
-                  <MinusCircleOutlined
-                    style={{ fontSize: 25, color: "tomato", marginTop: "32px" }}
-                    onClick={() => remove(name)}
-                  />
+                  <Form.Item
+                    style={{ display: "flex", alignItems: "center" }} // Align vertically with input fields
+                    {...restField}
+                    shouldUpdate={(prevValues, curValues) =>
+                      prevValues.area !== curValues.area ||
+                      prevValues.sights !== curValues.sights
+                    }
+                  >
+                    {() => (
+                      <MinusCircleOutlined
+                        style={{ fontSize: 25, color: "tomato" }}
+                        onClick={() => remove(name)}
+                      />
+                    )}
+                  </Form.Item>
                 </div>
               </div>
             ))}

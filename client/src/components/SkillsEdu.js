@@ -10,13 +10,13 @@ function SkillsEdu() {
       <Form.List name="education">
         {(fields, { add, remove }) => (
           <>
-            {fields.map(({ key, name, ...restField }, index) => (
+            {fields.map(({ key, name, ...restField }) => (
               <div key={key} className="row">
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
                     name={[name, "qualification"]}
-                    label={index === 0 ? "Qualification" : null}
+                    label="Qualification"
                     rules={[
                       { required: true, message: "Missing qualification" },
                     ]}
@@ -29,7 +29,7 @@ function SkillsEdu() {
                   <Form.Item
                     {...restField}
                     name={[name, "percentage"]}
-                    label={index === 0 ? "Percentage / Score" : null}
+                    label="Percentage / Score"
                     rules={[{ required: true, message: "Missing percentage" }]}
                   >
                     <Input placeholder="eg. 95% or 9.1/10.0" />
@@ -40,7 +40,7 @@ function SkillsEdu() {
                   <Form.Item
                     {...restField}
                     name={[name, "institution"]}
-                    label={index === 0 ? "Institution" : null}
+                    label="Institution"
                     rules={[{ required: true, message: "Missing institution" }]}
                   >
                     <Input placeholder="Institution" />
@@ -51,7 +51,7 @@ function SkillsEdu() {
                   <Form.Item
                     {...restField}
                     name={[name, "range"]}
-                    label={index === 0 ? "Year Range" : null}
+                    label="Year Range"
                     rules={[{ required: true, message: "Missing year range" }]}
                   >
                     <Input placeholder="From - To" />
@@ -59,10 +59,17 @@ function SkillsEdu() {
                 </div>
 
                 <div className="col-md-2">
-                  <MinusCircleOutlined
-                    style={{ fontSize: 25, color: "tomato", marginTop: "32px" }}
-                    onClick={() => remove(name)}
-                  />
+                  <Form.Item
+                    {...restField}
+                    name={[name, "action"]}
+                    label=""
+                    className="minus-icon"
+                  >
+                    <MinusCircleOutlined
+                      style={{ fontSize: 25, color: "tomato" }}
+                      onClick={() => remove(name)}
+                    />
+                  </Form.Item>
                 </div>
               </div>
             ))}
@@ -85,13 +92,13 @@ function SkillsEdu() {
       <Form.List name="skills">
         {(fields, { add, remove }) => (
           <>
-            {fields.map(({ key, name, ...restField }, index) => (
+            {fields.map(({ key, name, ...restField }) => (
               <div key={key} className="row">
                 <div className="col-md-3">
                   <Form.Item
                     {...restField}
                     name={[name, "technology"]}
-                    label={index === 0 ? "Technology" : null}
+                    label="Technology"
                     rules={[{ required: true, message: "Missing technology" }]}
                   >
                     <Input placeholder="eg. Java" />
@@ -102,7 +109,7 @@ function SkillsEdu() {
                   <Form.Item
                     {...restField}
                     name={[name, "rating"]}
-                    label={index === 0 ? "Rating (out of 10)" : null}
+                    label="Rating (out of 10)"
                     rules={[{ required: true, message: "Missing rating" }]}
                   >
                     <Input placeholder="eg. 8" />
@@ -110,10 +117,17 @@ function SkillsEdu() {
                 </div>
 
                 <div className="col-md-7">
-                  <MinusCircleOutlined
-                    style={{ fontSize: 25, color: "tomato", marginTop: "32px" }}
-                    onClick={() => remove(name)}
-                  />
+                  <Form.Item
+                    {...restField}
+                    name={[name, "action"]}
+                    label=""
+                    className="minus-icon"
+                  >
+                    <MinusCircleOutlined
+                      style={{ fontSize: 25, color: "tomato" }}
+                      onClick={() => remove(name)}
+                    />
+                  </Form.Item>
                 </div>
               </div>
             ))}
@@ -133,5 +147,11 @@ function SkillsEdu() {
     </div>
   );
 }
-
+const styles = `
+  .minus-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 export default SkillsEdu;

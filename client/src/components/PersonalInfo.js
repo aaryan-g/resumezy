@@ -1,5 +1,4 @@
-import { Input } from "antd";
-import Form from "antd/es/form/Form";
+import { Input, Form } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import React from "react";
 
@@ -36,7 +35,7 @@ function PersonalInfo() {
         <div className="col-md-4">
           <Form.Item
             name="mobileNumber"
-            label="Contact Number"
+            label="Contact number"
             rules={[{ required: true }]}
           >
             <Input />
@@ -49,23 +48,23 @@ function PersonalInfo() {
           </Form.Item>
         </div>
 
-        <div className="col-md-12">
+        <div className="col-md-6">
           <Form.Item
             name="careerObjective"
             label="Career objective"
             rules={[{ required: true }]}
           >
-            <TextArea />
+            <TextArea autoSize={{ minRows: 5, maxRows: 9 }} />
           </Form.Item>
         </div>
 
-        <div className="col-md-12">
+        <div className="col-md-6">
           <Form.Item
             name="address"
             label="Address"
             rules={[{ required: true }]}
           >
-            <TextArea />
+            <TextArea autoSize={{ minRows: 5, maxRows: 9 }} />
           </Form.Item>
         </div>
       </div>
