@@ -47,5 +47,17 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 * Created a Profile page file and imported AntD tabs (client/src/pages/Profile.js).
 * Created separate pages (.js) for Personal Info, Skills and Experience tabs.
 * Imported dynamic forms from AntD library for Skills and Experience pages.
-  
- 
+
+## Day 6 (6/2/2024): Update Profile API Integration
+* Extended user model for newly added details in User profile.
+* Wrote API for updating User profile.
+
+## Day 7 (12/2/2024): Password Encryption
+
+## Day 8 (16/2/2024): Templates Creation
+* Configured folder structure for templates.
+* Created template layouts and linked them to User Profile Info.
+
+## Day 9 (16/2/2024): Templates and Home Page
+* Displayed template catalog on Home page.
+* Established navigation from Home page to Template page.
