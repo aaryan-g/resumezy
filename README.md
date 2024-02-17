@@ -55,4 +55,5 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 ## Day 7 (12/2/2024): Password Encryption
 
 ## Day 8 (17/2/2024): Templates Creation
+* Configured folder structure for templates
  
