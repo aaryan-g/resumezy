@@ -60,3 +60,4 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 
 ## Day 9 (16/2/2024): Templates and Home Page
 * Displayed template catalog on Home page.
+* Established navigation from Home page to Template page.
