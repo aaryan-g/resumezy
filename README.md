@@ -51,4 +51,8 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 ## Day 6 (6/2/2024): Update Profile API Integration
 * Extended user model for newly added details in User profile.
 * Wrote API for updating User profile.
+
+## Day 7 (12/2/2024): Password Encryption
+
+## Day 8 (17/2/2024): Templates Creation
  
