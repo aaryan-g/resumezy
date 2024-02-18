@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const URL =
-  "mongodb+srv://avalanche:Ed!th3000@cluster0.aybuv6n.mongodb.net/RESUMEZY";
+const URL = process.env.MONGODB_URL;
 
 mongoose.connect(URL, {
   useUnifiedTopology: true,
