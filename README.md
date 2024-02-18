@@ -56,8 +56,12 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 
 ## Day 8 (16/2/2024): Templates Creation
 * Configured folder structure for templates.
-* Created template layouts and linked them to User Profile Info.
+* Created a simple template layout and linked it to User Profile Info.
 
 ## Day 9 (16/2/2024): Templates and Home Page
 * Displayed template catalog on Home page.
 * Established navigation from Home page to Template page.
+
+## Day 10: (18/2/2024): Print Resume
+* Used react-to-print npm package for print functionality.
+* Tweeked the template for a cleaner converted resume pdf.
