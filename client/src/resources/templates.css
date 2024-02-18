@@ -37,11 +37,11 @@
 
 .template1-parent {
   color: rgba(0, 0, 0, 0.699) !important;
-  padding: 100px !important;
+  padding: 75px !important;
 }
 
 .template1-parent h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
 }
 

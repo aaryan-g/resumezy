@@ -15,14 +15,14 @@ function Template1() {
           <p>{user.mobileNumber}</p>
         </div>
       </div>
-      <div className="divider mt-4"></div>
-      <div className="objective mt-5">
+      <div className="divider mt-3"></div>
+      <div className="objective mt-3">
         <h3>OBJECTIVE</h3>
         <hr />
         <p>{user.careerObjective}</p>
       </div>
       {/* <div className="divider mt-4"></div> */}
-      <div className="education mt-5">
+      <div className="education mt-4">
         <h3>EDUCATION</h3>
         <hr />
         {user.education.map((education) => {
@@ -39,7 +39,7 @@ function Template1() {
           );
         })}
       </div>
-      <div className="experience mt-5">
+      <div className="experience mt-4">
         <h3>EXPERIENCE</h3>
         <hr />
         {user.experience.map((exp) => {
@@ -55,7 +55,7 @@ function Template1() {
           );
         })}
       </div>
-      <div className="projects mt-5">
+      <div className="projects mt-4">
         <h3>PROJECTS</h3>
         <hr />
         {user.projects.map((project) => {
@@ -72,7 +72,7 @@ function Template1() {
           );
         })}
       </div>
-      <div className="skills mt-5">
+      <div className="skills mt-2">
         <h3>SKILLS</h3>
         <hr />
         {user.skills.map((skill) => {
