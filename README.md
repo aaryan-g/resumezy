@@ -53,6 +53,7 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 * Wrote API for updating User profile.
 
 ## Day 7 (12/2/2024): Password Encryption
+* Used hashing and salting for password encryption using 'bcrypt' NodeJS library.
 
 ## Day 8 (16/2/2024): Templates Creation
 * Configured folder structure for templates.
