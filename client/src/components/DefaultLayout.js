@@ -43,7 +43,7 @@ function DefaultLayout(props) {
           menu={{
             items,
           }}
-          placement="bottomCenter"
+          placement="bottom"
         >
           <Button>{user.username}</Button>
         </Dropdown>

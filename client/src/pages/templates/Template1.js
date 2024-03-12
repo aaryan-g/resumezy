@@ -6,18 +6,21 @@ function Template1() {
   return (
     <div className="template1-parent">
       <div className="top d-flex justify-content-between">
-        <h1>
-          {user.firstName.toUpperCase()} {user.lastName.toUpperCase()}
-        </h1>
+        <div>
+          <h1>{user.firstName.toUpperCase()}</h1>
+          <h1>{user.lastName.toUpperCase()}</h1>
+        </div>
+
         <div>
           <p>{user.email}</p>
-          <p>{user.address}</p>
           <p>{user.mobileNumber}</p>
+          {user.linkedIn.length !== 0 && <p>{user.linkedIn}</p>}
+          {user.github.length !== 0 && <p>{user.github}</p>}
         </div>
       </div>
       <div className="divider mt-3"></div>
       <div className="objective mt-3">
-        <h3>OBJECTIVE</h3>
+        <h3>SUMMARY</h3>
         <hr />
         <p>{user.careerObjective}</p>
       </div>

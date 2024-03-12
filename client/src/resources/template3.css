@@ -1,0 +1,174 @@
+/*  home page template styling */
+.home .template {
+  margin: 30px;
+  box-shadow: 0, 0, 2px gray;
+  padding: 20px;
+  position: relative;
+  width: 350px;
+}
+
+.home .template .text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.home .template .text:hover {
+  background-color: black;
+  opacity: 0.8;
+  color: white !important ;
+  display: flex;
+  empty-cells: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.home .template button {
+  background-color: white !important;
+  color: black !important;
+  font-size: 16px !important;
+  padding: 0 20px;
+}
+
+.template4-parent .left-side {
+  position: relative;
+  background: #323b4c;
+  padding: 30px;
+  color: #fff;
+}
+
+.template4-parent .right-side {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+}
+
+.container5 .left-side1 {
+  margin-left: 0px;
+  position: relative;
+  padding: 0 10px;
+  padding-left: 42px;
+  border-style: none;
+  background-color: #f1f1f1;
+}
+
+.container5 .right-side1 {
+  position: relative;
+  padding: 0 10px;
+  margin-right: 40px;
+  padding-left: 20px;
+}
+
+.head {
+  margin-top: 20px;
+  margin-left: 42px;
+  margin-right: 42px;
+  line-height: 15px;
+}
+
+/* template 1 CSS */
+
+.template1-parent h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+.template1-parent {
+  color: rgba(0, 0, 0, 0.77);
+  padding: 100px;
+}
+
+.template1-parent p {
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 2px !important;
+  font-size: 16px;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+}
+
+.template1-parent h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.77);
+}
+
+.template1-parent h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*template 4*/
+.template4-parent h1 {
+  font-size: 35px;
+  color: #fdfdfd;
+}
+
+.template4-parent {
+  color: rgba(0, 0, 0, 0.77);
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+}
+
+.template4-parent p {
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 2px !important;
+  font-size: 16px;
+}
+
+.template4-parent h3 {
+  font-size: 26px;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+.template4-parent h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.template5-parent h1,
+h3,
+h6 {
+  color: #575757;
+}
+
+.template5-parent {
+  color: rgba(0, 0, 0, 0.77);
+  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+.container5 {
+  position: relative;
+  /* width: 100%; */
+  /* max-width: 1000px;
+  max-height: 1000px; */
+  background: #fff;
+  /* margin: 50px; */
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+}
+
+.hometext {
+  padding: 50px;
+  font-size: medium;
+}
+.buttonDiv {
+  float: right;
+  padding-right: 30px;
+}
