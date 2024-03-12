@@ -66,3 +66,8 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 ## Day 10: (18/2/2024): Print Resume
 * Used react-to-print npm package for print functionality.
 * Tweeked the template for a cleaner converted resume pdf.
+
+## Day 11: (28/2/2024) : More Profile Fields and Resume Templates
+* Added Github and LinkedIn URL fields in "Personal Information" tab, new dynamic form section for Certifications in "Skills and Education" tab of User Profile.
+* Created a new "Achievements and Hobbies" Tab in User Profile. Inculcated information entered in newly created form sections on the templates.
+* Created Templates 2, 3 and 4 and displated their previews on home page. Used Material UI for fonts and icons displayed on the templates.
