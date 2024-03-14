@@ -29,6 +29,7 @@ function Register() {
     <div className="auth-parent">
       {/*Parent Element*/}
       {loading && <Spin size="large" />}
+      <h1 className="brand">RESUMEZY</h1>
       <Form layout="vertical" onFinish={onFinish}>
         <h1>Register</h1>
         <hr></hr>

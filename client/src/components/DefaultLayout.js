@@ -2,6 +2,7 @@ import React from "react";
 import "./../resources/defaultLayout.css";
 import { Button, Dropdown } from "antd";
 import { Navigate, useNavigate, Link } from "react-router-dom";
+import { UserOutlined } from "@ant-design/icons";
 
 function DefaultLayout(props) {
   const user = JSON.parse(localStorage.getItem("RESUMEZY-users"));
@@ -13,11 +14,19 @@ function DefaultLayout(props) {
   const items = [
     {
       key: "1",
-      label: <Link to="/home">Home</Link>,
+      label: (
+        <Link style={{ textDecorationLine: "none" }} to="/home">
+          Home
+        </Link>
+      ),
     },
     {
       key: "2",
-      label: <Link to="/profile">Profile</Link>,
+      label: (
+        <Link style={{ textDecorationLine: "none" }} to="/profile">
+          Profile
+        </Link>
+      ),
     },
     {
       key: "3",
@@ -45,7 +54,7 @@ function DefaultLayout(props) {
           }}
           placement="bottom"
         >
-          <Button>{user.username}</Button>
+          <Button icon={<UserOutlined />}>{user.username}</Button>
         </Dropdown>
       </div>
       <div className="content" style={{ overflow: "scroll" }}>

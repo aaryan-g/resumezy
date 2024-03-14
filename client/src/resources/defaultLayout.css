@@ -1,6 +1,6 @@
 .layout {
   height: 100vh;
-  padding: 20px 50px;
+  padding: 20px;
 }
 
 .header {
@@ -16,6 +16,41 @@
 .header h1 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 30px;
+}
+
+.header h1 {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.header h1:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header h1:hover {
+  background-position: 0;
+}
+
+.header h1:hover::before {
+  width: 100%;
+}
+
+.header button {
+  border: 1px solid white !important;
+  color: white !important;
 }
 
 .header button {

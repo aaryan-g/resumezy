@@ -16,6 +16,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #625eb1 100%
+  );
+  position: absolute;
+  width: 100%;
 }
 
 .auth-parent h1 {
@@ -27,4 +35,42 @@
   width: 400px;
   box-shadow: 0 0 3px gray;
   padding: 20px;
+  background-color: white !important;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+.brand {
+  font-size: 200px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.745);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  outline: none;
+  text-align: center;
+}
+
+.brand:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 3.5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .brand {
+    display: none;
+  }
 }

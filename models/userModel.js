@@ -10,33 +10,33 @@ const userSchema = new mongoose.Schema(
     email: {
       type: String,
       default: "",
-      validate: { validator: validator.isEmail, message: "Invalid email" },
+      // validate: { validator: validator.isEmail, message: "Invalid email" },
     },
     mobileNumber: {
       type: String,
       default: "",
-      validate: {
-        validator: validator.isMobilePhone,
-        message: "Invalid mobile number",
-      },
+      // validate: {
+      //   validator: validator.isMobilePhone,
+      //   message: "Invalid mobile number",
+      // },
     },
 
     linkedIn: {
       type: String,
       default: "",
-      validate: { validator: validator.isURL, message: "Invalid URL" },
+      // validate: { validator: validator.isURL, message: "Invalid URL" },
     },
 
     github: {
       type: String,
       default: "",
-      validate: { validator: validator.isURL, message: "Invalid URL" },
+      // validate: { validator: validator.isURL, message: "Invalid URL" },
     },
 
     portfolio: {
       type: String,
       default: "",
-      validate: { validator: validator.isURL, message: "Invalid URL" },
+      // validate: { validator: validator.isURL, message: "Invalid URL" },
     },
     careerObjective: { type: String, default: "" },
     address: { type: String, default: "" },

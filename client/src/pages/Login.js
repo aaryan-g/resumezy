@@ -31,6 +31,7 @@ function Login() {
     <div className="auth-parent">
       {/*Parent Element*/}
       {loading && <Spin size="large" />}
+      <h1 className="brand">RESUMEZY</h1>
       <Form layout="vertical" onFinish={onFinish}>
         <h1>Login</h1>
         <hr></hr>
