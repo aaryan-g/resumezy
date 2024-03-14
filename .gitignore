@@ -1,7 +1,5 @@
 # Ignore Node.js build artifacts and dependencies
 node_modules/
-/dist/
-/build/
 
 # Ignore public folder in client
 /client/public/
