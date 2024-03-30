@@ -71,3 +71,9 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 * Added Github and LinkedIn URL fields in "Personal Information" tab, new dynamic form section for Certifications in "Skills and Education" tab of User Profile.
 * Created a new "Achievements and Hobbies" Tab in User Profile. Inculcated information entered in newly created form sections on the templates.
 * Created Templates 2, 3 and 4 and displated their previews on home page. Used Material UI for fonts and icons displayed on the templates.
+
+## Day 12: (25/3/2024) : Forgot Password and Reset Password
+* Added a forgot password option on Login page.
+* Created pages for email address input and setting new password.
+* Created APIs for handling forgot password and reset password operations.
+* Added functionality to send a password reset link on registered email address using nodemailer.
