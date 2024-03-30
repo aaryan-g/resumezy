@@ -72,7 +72,11 @@ And created routes to Home, Register and Login pages inside src/client/App.js
 * Created a new "Achievements and Hobbies" Tab in User Profile. Inculcated information entered in newly created form sections on the templates.
 * Created Templates 2, 3 and 4 and displated their previews on home page. Used Material UI for fonts and icons displayed on the templates.
 
-## Day 12: (25/3/2024) : Forgot Password and Reset Password
+## Day 12: (14/3/2024) : CSS Fixes, Refractors and Deployment 
+* Updated authentication pages and navigation bar theme.
+* Made deployment-related changes in code. 
+
+## Day 13: (25/3/2024) : Forgot Password and Reset Password
 * Added a forgot password option on Login page.
 * Created pages for email address input and setting new password.
 * Created APIs for handling forgot password and reset password operations.
