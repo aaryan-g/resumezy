@@ -34,6 +34,10 @@ function Register() {
         <h1>Register</h1>
         <hr></hr>
         {/* Wrapper */}
+        <Form.Item name="email" label="Email Address">
+          <Input></Input>
+        </Form.Item>
+
         <Form.Item name="username" label="Username">
           <Input></Input>
         </Form.Item>

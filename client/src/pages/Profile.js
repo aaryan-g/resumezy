@@ -41,7 +41,7 @@ function Profile() {
         _id: user._id,
       });
       localStorage.setItem("RESUMEZY-users", JSON.stringify(result.data));
-      console.log(result.data);
+      // console.log(result.data);
       setLoading(false);
       message.success("Profile updated successfully");
     } catch (error) {

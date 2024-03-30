@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Button, Checkbox, Form, Input, Spin, message } from "antd";
+import { Button, Form, Input, Spin, message } from "antd";
 import "../resources/authentication.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-function Login() {
+function ForgotPassWord() {
   const [loading, setLoading] = useState(false);
   const Navigate = useNavigate();
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const user = await axios.post("api/user/login", values);
+      const user = await axios.post("api/user/forgot-password", values);
       setLoading(false);
-      message.success("Login successful.");
-      localStorage.setItem("RESUMEZY-users", JSON.stringify(user.data));
-      Navigate("/home");
+      message.success("Email sent successfully.");
+      Navigate("/login");
     } catch (error) {
       setLoading(false);
-      message.error("Login failed.");
+      message.error("Something went wrong :(");
     }
   };
 
@@ -33,31 +32,22 @@ function Login() {
       {loading && <Spin size="large" />}
       <h1 className="brand">RESUMEZY</h1>
       <Form layout="vertical" onFinish={onFinish}>
-        <h1>Login</h1>
+        <h1>Forgot Password</h1>
         <hr></hr>
         {/* Wrapper */}
-        <Form.Item name="username" label="Username">
+        <p>We will send you an email with the password reset link.</p>
+        <Form.Item name="email" label="Email Address">
           <Input></Input>
         </Form.Item>
 
-        <Form.Item name="password" label="Password">
-          <Input type="password"></Input>
-        </Form.Item>
-
         <div className="d-flex align-items-center justify-content-between">
-          <Link to="/forgot-password">Forgot Password?</Link>
           <Button type="primary" htmlType="submit">
-            LOGIN
+            Email Me
           </Button>
         </div>
-
-        <hr></hr>
-        <p>
-          New User? <Link to="/register">Register now</Link>
-        </p>
       </Form>
     </div>
   );
 }
 
-export default Login;
+export default ForgotPassWord;
