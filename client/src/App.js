@@ -65,6 +65,6 @@ export function ProtectedRoute(props) {
   if (localStorage.getItem("RESUMEZY-users")) {
     return props.children;
   } else {
-    return <Navigate to="/login" />;
+    return <Navigate to="/register" />;
   }
 }

@@ -22,7 +22,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.post("/reset-password/:id", async (req, res) => {
-  console.log("request recieved.");
   const { id } = req.params;
   const { password } = req.body;
 

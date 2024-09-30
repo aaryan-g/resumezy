@@ -15,7 +15,10 @@ function DefaultLayout(props) {
     {
       key: "1",
       label: (
-        <Link style={{ textDecorationLine: "none" }} to="/home">
+        <Link
+          style={{ textDecorationLine: "none", textAlign: "center" }}
+          to="/home"
+        >
           Home
         </Link>
       ),
